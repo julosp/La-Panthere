@@ -1,0 +1,29 @@
+@mixin button {
+  padding: 1% 2% 1% 2%;
+  width: fit-content;
+  border-radius: 30px;
+  color: white;
+  background-color: #f3976c;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+@mixin portfolio-card {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: 0 2%;
+  margin-bottom: 5%;
+  img {
+    width: 100%;
+  }
+  h3 {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p {
+    text-align: center;
+  }
+}

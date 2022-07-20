@@ -1,0 +1,154 @@
+.agence {
+  &__container {
+    background-image: url(/img/agence-la-panthere.jpg);
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0;
+    img {
+      width: 100px;
+      margin-top: 8%;
+    }
+    h1 {
+      color: #f3976c;
+    }
+    button {
+      @include button;
+      margin-bottom: 10%;
+    }
+  }
+}
+
+.services {
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__description {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    width: 50%;
+    h2 {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+  &__box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 1% 0 1%;
+    h4 {
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  &__citation {
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    &__comment {
+      font-style: italic;
+      margin-bottom: 0;
+    }
+    &__name {
+      color: #848484;
+    }
+  }
+}
+
+.icon__web::before {
+  font-family: et-line;
+  font-weight: 400;
+  font-size: 60px;
+  content: "\e00c";
+}
+
+.icon__strat::before {
+  font-family: et-line;
+  font-weight: 400;
+  font-size: 60px;
+  content: "\e00e";
+}
+
+.icon__illustration::before {
+  font-family: et-line;
+  font-weight: 400;
+  font-size: 60px;
+  content: "\e01c";
+}
+
+.objectif {
+  display: flex;
+  justify-content: center;
+  background-image: url(/img/image-de-presentation.jpg);
+  background-position: center;
+  background-size: cover;
+  &__bloc {
+    text-align: center;
+    width: 50%;
+    margin: 5% auto;
+    padding: 2%;
+    background-color: rgba(104, 120, 45, 0.426);
+    h3 {
+      color: #f3976c;
+      font-size: 25px;
+    }
+    p {
+      color: white;
+    }
+  }
+}
+
+.portfolio {
+  background-image: url(/img/lines-h2-bg.png);
+  padding-bottom: 5%;
+  &__title {
+    text-align: center;
+    margin: 0 auto;
+    width: 40%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 20%;
+    &__card {
+      @include portfolio-card;
+    }
+  }
+}
+
+.contact {
+  background-image: url(/img/agence-la-panthere.jpg);
+  background-position: center;
+  background-size: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    color: #f3976c;
+    margin-top: 15%;
+    margin-bottom: 5%;
+  }
+  button {
+    @include button;
+    margin-bottom: 15%;
+  }
+}

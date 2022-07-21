@@ -20,6 +20,42 @@
   font-size: 16px;
 }
 
+footer {
+  background-color: #f3976c;
+  max-width: none !important;
+}
+footer h4 {
+  text-align: center;
+  margin: 0;
+  padding-top: 2%;
+  color: white;
+}
+footer .social {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+footer .social li {
+  margin: 2% 5%;
+  font-size: 30px;
+  color: white;
+}
+footer .annuaires__container {
+  display: flex;
+  justify-content: center;
+}
+footer .annuaires__liste {
+  position: relative;
+  margin: 2% 3%;
+}
+footer .annuaires__title {
+  position: absolute;
+  top: -20px;
+  left: -5px;
+  list-style: none;
+  color: white;
+}
+
 /*RESET LINK STYLE*/
 a:visited {
   color: inherit;
@@ -32,7 +68,7 @@ a {
 
 /**/
 @media screen and (min-width: 1024px) {
-  body {
+  .page-container {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
@@ -193,6 +229,12 @@ a {
 .portfolio__container__card p {
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .portfolio__container__card {
+    margin: 0 4%;
+    width: 40%;
+  }
+}
 
 .contact {
   background-image: url(/img/agence-la-panthere.jpg);
@@ -207,6 +249,7 @@ a {
   color: #f3976c;
   margin-top: 15%;
   margin-bottom: 5%;
+  text-align: center;
 }
 .contact button {
   padding: 1% 2% 1% 2%;
@@ -220,4 +263,35 @@ a {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .header__container {
+    height: 100px;
+    justify-content: center;
+  }
+  .header__container__logo img {
+    height: 60px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .services__description {
+    width: 60%;
+  }
+  .services__card {
+    width: 25%;
+  }
+  .services__citation {
+    width: 70%;
+  }
+  .objectif__bloc {
+    width: 70%;
+  }
+  .portfolio__container {
+    margin: 0 10%;
+  }
+  .portfolio__title {
+    width: 60%;
+  }
 }/*# sourceMappingURL=style.css.map */

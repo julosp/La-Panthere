@@ -1,0 +1,19 @@
+.prise-contacte {
+  background-color: #f3976c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+  h1 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+}

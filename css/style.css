@@ -265,7 +265,7 @@ a {
   margin-bottom: 15%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .header__container {
     height: 100px;
     justify-content: center;
@@ -294,4 +294,77 @@ a {
   .portfolio__title {
     width: 60%;
   }
+}
+@media screen and (max-width: 768px) {
+  .header__container {
+    height: 100px;
+    justify-content: center;
+  }
+  .header__container__logo img {
+    height: 50px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .agence__container h1 {
+    text-align: center;
+  }
+  .services__description {
+    width: 95%;
+  }
+  .services__citation {
+    width: 95%;
+  }
+  .services__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .services__card {
+    margin: 2% auto;
+    width: 90%;
+  }
+  .objectif__bloc {
+    width: 95%;
+  }
+  .portfolio__title {
+    width: 95%;
+  }
+  .portfolio__container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .portfolio__container__card {
+    width: 95%;
+    margin-bottom: 5%;
+  }
+  .social {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .annuaires__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .annuaires__liste {
+    padding-bottom: 10%;
+  }
+}
+.prise-contacte {
+  background-color: #f3976c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+}
+.prise-contacte h1 {
+  font-size: 25px;
+}
+.prise-contacte p {
+  font-size: 20px;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

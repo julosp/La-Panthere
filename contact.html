@@ -21,6 +21,7 @@
     <script src="./js/blocs.min.js"></script>
     <script src="./js/jqBootstrapValidation.js"></script>
     <script src="./js/formHandler.js"></script>
+    <script src="https://kit.fontawesome.com/2bca06624f.js" crossorigin="anonymous"></script>
     <title>page2</title>
 
     <!-- Analytics -->
@@ -64,20 +65,21 @@
       <!-- bloc-6 END -->
 
       <!-- bloc-7 -->
-      <section class="formulaire">
+      <section class="middle-container">
+        <div class="formulaire">
         <form>
-          <label for="name">Nom</label>
-          <input type="text" id="name" name="nom" placeholder="Votre nom..">
+          <label for="name">Nom:</label>
+          <input type="text" class="formulaire__input" name="nom" placeholder="Votre nom..">
         </form>
 
         <form>
-          <label for="mail">Adresse email</label>
-          <input type="text" id="email" name="adresse_mail" placeholder="Votre adresse email..">
+          <label for="mail">Adresse email:</label>
+          <input type="text" class="formulaire__input" name="adresse_mail" placeholder="Votre adresse email..">
         </form>
 
         <form>
           <label for="mail">Comment nous avez-vous connu ?</label>
-          <select name="" id="">
+          <select name="" class="">
             <option value="">--Selectionnez une option--</option>
             <option value="recherche">Recherche internet</option>
             <option value="bouche-a-oreille">Bouche à oreille</option>
@@ -87,11 +89,22 @@
         </select>
         </form>
 
-        <label for="subject">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
-        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+        <label for="subject">Brief de votre projet (Ajoutez autant de détails que nécessaire):</label>
+        <textarea class="formulaire__text" name="subject" placeholder="Decrivez votre projet..."></textarea>
     
-        <input type="submit" value="Envoyer">
+        <input type="submit" value="Envoyer" class="formulaire__submit">
         </form>
+      </div>
+      <div class="location">
+        <div class="mapouter">
+          <div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=2%20place%20Sathonay%2069001%20Lyon&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:400px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div>
+        </div>
+        <p>contact@agencelapanthere.com</p>
+        <p>Ouvert de 9h à 18h, du lundi au vendredi</p>
+        <p>2 place Sathonay 69001 Lyon</p>
+
+      </div>
+
 
       </section>
 

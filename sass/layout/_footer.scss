@@ -1,11 +1,11 @@
 footer {
   background-color: #f3976c;
   max-width: none !important;
-  h4 {
+  h3 {
     text-align: center;
     margin: 0;
     padding-top: 2%;
-    color: white;
+    color: black;
   }
   .social {
     display: flex;
@@ -14,7 +14,7 @@ footer {
     li {
       margin: 2% 5%;
       font-size: 30px;
-      color: white;
+      color: black;
     }
   }
   .annuaires {
@@ -32,7 +32,7 @@ footer {
       top: -20px;
       left: -5px;
       list-style: none;
-      color: white;
+      color: black;
     }
   }
 }

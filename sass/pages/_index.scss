@@ -11,7 +11,7 @@
       margin-top: 8%;
     }
     h1 {
-      color: #f3976c;
+      color: white;
     }
     button {
       @include button;
@@ -48,7 +48,7 @@
     justify-content: space-around;
     text-align: center;
     margin: 0 1% 0 1%;
-    h4 {
+    h3 {
       text-transform: uppercase;
     }
     p {
@@ -64,7 +64,7 @@
       margin-bottom: 0;
     }
     &__name {
-      color: #848484;
+      color: black;
     }
   }
 }
@@ -103,7 +103,7 @@
     padding: 2%;
     background-color: rgba(104, 120, 45, 0.426);
     h3 {
-      color: #f3976c;
+      color: white;
       font-size: 25px;
     }
     p {
@@ -143,7 +143,7 @@
   align-items: center;
   flex-direction: column;
   h2 {
-    color: #f3976c;
+    color: white;
     margin-top: 15%;
     margin-bottom: 5%;
     text-align: center;

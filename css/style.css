@@ -24,11 +24,11 @@ footer {
   background-color: #f3976c;
   max-width: none !important;
 }
-footer h4 {
+footer h3 {
   text-align: center;
   margin: 0;
   padding-top: 2%;
-  color: white;
+  color: black;
 }
 footer .social {
   display: flex;
@@ -38,7 +38,7 @@ footer .social {
 footer .social li {
   margin: 2% 5%;
   font-size: 30px;
-  color: white;
+  color: black;
 }
 footer .annuaires__container {
   display: flex;
@@ -54,7 +54,7 @@ footer .annuaires__title {
   top: -20px;
   left: -5px;
   list-style: none;
-  color: white;
+  color: black;
 }
 
 @media screen and (max-width: 992px) {
@@ -109,7 +109,7 @@ a {
   margin-top: 8%;
 }
 .agence__container h1 {
-  color: #f3976c;
+  color: white;
 }
 .agence__container button {
   padding: 1% 2% 1% 2%;
@@ -117,7 +117,7 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 30px;
-  color: white;
+  color: black;
   background-color: #f3976c;
   border: none;
   font-size: 18px;
@@ -153,7 +153,7 @@ a {
   text-align: center;
   margin: 0 1% 0 1%;
 }
-.services__card h4 {
+.services__card h3 {
   text-transform: uppercase;
 }
 .services__card p {
@@ -169,7 +169,7 @@ a {
   margin-bottom: 0;
 }
 .services__citation__name {
-  color: #848484;
+  color: black;
 }
 
 .icon__web::before {
@@ -208,7 +208,7 @@ a {
   background-color: rgba(104, 120, 45, 0.426);
 }
 .objectif__bloc h3 {
-  color: #f3976c;
+  color: white;
   font-size: 25px;
 }
 .objectif__bloc p {
@@ -242,6 +242,7 @@ a {
 }
 .portfolio__container__card img {
   width: 100%;
+  height: auto;
 }
 .portfolio__container__card h3 {
   font-size: 18px;
@@ -268,7 +269,7 @@ a {
   flex-direction: column;
 }
 .contact h2 {
-  color: #f3976c;
+  color: white;
   margin-top: 15%;
   margin-bottom: 5%;
   text-align: center;
@@ -279,7 +280,7 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 30px;
-  color: white;
+  color: black;
   background-color: #f3976c;
   border: none;
   font-size: 18px;
@@ -431,7 +432,7 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 30px;
-  color: white;
+  color: black;
   background-color: #f3976c;
   border: none;
   font-size: 18px;

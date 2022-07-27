@@ -2,27 +2,22 @@
 <html lang="Fr">
   <head>
     <meta charset="utf-8" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+    <meta name="description" content="Agence Lyonnaise de Web Design">
+    <meta name="keywords" content="création site web lyon">
 
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="./css/et-line.css" />
+    <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
 
-    <script src="./js/jquery-2.1.0.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/blocs.min.js"></script>
-    <script src="./js/jqBootstrapValidation.js"></script>
-    <script src="./js/formHandler.js"></script>
-    <script src="https://kit.fontawesome.com/2bca06624f.js" crossorigin="anonymous"></script>
-    <title>page2</title>
+    <script src="./js/jquery-2.1.0.js" defer></script>
+    <script src="./js/bootstrap.js" defer></script>
+    <script src="./js/blocs.js" defer></script>
+    <script src="./js/jquery.touchSwipe.js" defer></script>
+    <script src="./js/gmaps.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/2bca06624f.min.js" crossorigin="anonymous"></script>
+
+    <title>La Panthère | Contacte</title>
 
     <!-- Analytics -->
     <!-- Google Tag Manager -->
@@ -36,9 +31,6 @@
 
       gtag('config', 'G-XY9HCEP189');
     </script>
-
-    
-  
   </head>
 
 
@@ -70,7 +62,7 @@
               <a href="index.html">Accueil</a>
           </li>
           <li>
-              <a href="contact.html">Contact</a>
+              <a href="contact.html">Contacte</a>
           </li>
       </ul>
     </header>
@@ -88,16 +80,16 @@
         <div class="formulaire">
         <form>
           <label for="name">Nom:</label>
-          <input type="text" class="formulaire__input" name="nom" placeholder="Votre nom..">
+          <input type="text" class="formulaire__input" name="nom" placeholder="Votre nom.." required>
         </form>
 
         <form>
           <label for="mail">Adresse email:</label>
-          <input type="text" class="formulaire__input" name="adresse_mail" placeholder="Votre adresse email..">
+          <input type="mail" class="formulaire__input" name="adresse_mail" placeholder="Votre adresse email.." required>
         </form>
 
         <form>
-          <label for="mail">Comment nous avez-vous connu ?</label>
+          <label for="howdidyoukowus">Comment nous avez-vous connu ?</label>
           <select name="" class="">
             <option value="">--Selectionnez une option--</option>
             <option value="recherche">Recherche internet</option>
@@ -109,9 +101,9 @@
         </form>
 
         <label for="subject">Brief de votre projet (Ajoutez autant de détails que nécessaire):</label>
-        <textarea class="formulaire__text" name="subject" placeholder="Decrivez votre projet..."></textarea>
+        <textarea class="formulaire__text" name="subject" placeholder="Decrivez votre projet..." required></textarea>
     
-        <input type="submit" value="Envoyer" class="formulaire__submit">
+        <button type="submit" value="Envoyer" class="formulaire__submit"> Envoyer </button>
         </form>
       </div>
       <div class="location">

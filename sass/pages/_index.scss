@@ -1,6 +1,6 @@
 .agence {
   &__container {
-    background-image: url(/img/agence-la-panthere.jpg);
+    background-image: url(/img/agence-la-panthere.webp);
     background-position: top;
     display: flex;
     flex-direction: column;
@@ -93,7 +93,7 @@
 .objectif {
   display: flex;
   justify-content: center;
-  background-image: url(/img/image-de-presentation.jpg);
+  background-image: url(/img/image-de-presentation_1.webp);
   background-position: center;
   background-size: cover;
   &__bloc {
@@ -135,7 +135,7 @@
 }
 
 .contact {
-  background-image: url(/img/agence-la-panthere.jpg);
+  background-image: url(/img/agence-la-panthere.webp);
   background-position: center;
   background-size: 120%;
   display: flex;

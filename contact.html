@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
+    <link rel="preload" src="./img/agence-la-panthere.webp" />
 
     <script src="./js/jquery-2.1.0.js" defer></script>
     <script src="./js/bootstrap.js" defer></script>
@@ -67,15 +68,15 @@
       </ul>
     </header>
 
-      <!-- bloc-6 -->
+      <!--PRISE CONTACTE-->
       <section class="prise-contacte">
             <h1>Parlons web design !</h1>
             <p>Nous sommes ravis que vous souhaitiez collaborer avec notre agence.</p>
             <p>de votre projet en complétant le formulaire ci-dessous.</p> 
       </section>
-      <!-- bloc-6 END -->
+      
 
-      <!-- bloc-7 -->
+      <!--CONTACTE-->
       <section class="middle-container">
         <div class="formulaire">
         <form>
@@ -106,14 +107,16 @@
         <button type="submit" value="Envoyer" class="formulaire__submit"> Envoyer </button>
         </form>
       </div>
+
+      <!--MAP-->
       <div class="location">
         <div class="mapouter">
-          <div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=2%20place%20Sathonay%2069001%20Lyon&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:400px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div>
+          <div class="gmap_canvas"><iframe title="localisation" width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=2%20place%20Sathonay%2069001%20Lyon&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:400px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div>
         </div>
         <p itemprop="email">contact@agencelapanthere.com</p>
         <p itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">Ouvert de 
-          <span itemprop="opens" content="Veuillez insérer ici une date/heure valide au format ISO 8601. Exemples : 2015-07-27 ou 2015-07-27T15:30">9h</span> à 
-          <span itemprop="closes" content="Veuillez insérer ici une date/heure valide au format ISO 8601. Exemples : 2015-07-27 ou 2015-07-27T15:30">18h</span>, du 
+          <span itemprop="opens" content="T09:00">9h</span> à 
+          <span itemprop="closes" content="T18:00">18h</span>, du 
           <span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
           <span itemprop="name">lundi au vendredi</span></span></p>
         <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
@@ -128,7 +131,7 @@
 
 
       <footer>
-        <h4><span itemprop="name">Agence La Panthère</span> - Agence web basée à Lyon</h4>
+        <h3><span itemprop="name">Agence La Panthère</span> - Agence web basée à Lyon</h3>
         <ul class="social">
           <li><i class="fa-brands fa-twitter"></i></li>
           <li><i class="fa-brands fa-facebook-f"></i></li>
@@ -138,37 +141,38 @@
         <div class="annuaires__container">
           <ul class="annuaires__liste">
             <li class="annuaires__title">Partenaires</li>
-            <a href="#"><li>voiture.com</li></a>
-            <a href="#"><li>pizza.com</li></a>
-            <a href="#"><li>matoiture.com</li></a>
-            <a href="#"><li>immobillierseo.com</li></a>
+            <li><a href="#" aria-label="voiture.com">voiture.com</a></li>
+            <li><a href="#" aria-label="pizza.com">pizza.com</a></li>
+            <li><a href="#" aria-label="matoiture.com">matoiture.com</a></li>
+            <li><a href="#" aria-label="immobillierseo.com">immobillierseo.com</a></li>
           </ul>
-
+  
           <ul class="annuaires__liste">
             <li class="annuaires__title">Annuaires liste 1</li>
-            <a href="#"><li>annuaireagence.com</li></a>
-            <a href="#"><li>annuaireseo.com</li></a>
-            <a href="#"><li>annuairemarketing.com</li></a>
-            <a href="#"><li>123seo.com</li></a>
-            <a href="#"><li>123site.com</li></a>
-            <a href="#"><li>annuairewordpress.com</li></a>
-            <a href="#"><li>listeagence.com</li></a>
-            <a href="#"><li>meilleuragencesparis.com</li></a>
-            <a href="#"><li>listeseo.com</li></a>
+            <li><a href="#" aria-label="annuaireagence.com">annuaireagence.com</a></li>
+            <li><a href="#" aria-label="annuaireseo.com">annuaireseo.com</a></li>
+            <li><a href="#" aria-label="annuairemarketing.com">annuairemarketing.com</a></li>
+            <li><a href="#" aria-label="123seo.com">123seo.com</a></li>
+            <li><a href="#" aria-label="123site.com">123site.com</a></li>
+            <li><a href="#" aria-label="annuairewordpress.com">annuairewordpress.com</a></li>
+            <li><a href="#" aria-label="listeagence.com">listeagence.com</a></li>
+            <li><a href="#" aria-label="meilleuragencesparis.com">meilleuragencesparis.com</a></li>
+            <li><a href="#" aria-label="listeseo.com">listeseo.com</a></li>
           </ul>
-
+  
           <ul class="annuaires__liste">
             <li class="annuaires__title">Partenaires</li>
-            <a href="#"><li>betterseo.com</li></a>
-            <a href="#"><li>ameliorerseo.com</li></a>
-            <a href="#"><li>seojuicelien.com</li></a>
-            <a href="#"><li>meilleursliens.com</li></a>
-            <a href="#"><li>liensagogo.com</li></a>
-            <a href="#"><li>backlink.com</li></a>
-            <a href="#"><li>linkjuiceannuaire.com</li></a>
-            <a href="#"><li>remontersurgoogle.com</li></a>
-            <a href="#"><li>vraiseofiable.com</li></a>
+            <li><a href="#" aria-label="betterseo.com">betterseo.com</a></li>
+            <li><a href="#" aria-label="ameliorerseo.com">ameliorerseo.com</a></li>
+            <li><a href="#" aria-label="seojuicelien.com">seojuicelien.com</a></li>
+            <li><a href="#" aria-label="meilleursliens.com">meilleursliens.com</a></li>
+            <li><a href="#" aria-label="liensagogo.com">liensagogo.com</a></li>
+            <li><a href="#" aria-label="backlink.com">backlink.com</a></li>
+            <li><a href="#" aria-label="linkjuiceannuaire.com">linkjuiceannuaire.com</a></li>
+            <li><a href="#" aria-label="remontersurgoogle.com">remontersurgoogle.com</a></li>
+            <li><a href="#" aria-label="vraiseofiable.com">vraiseofiable.com</a></li>
           </ul>
+  
         </div>
       </footer>
     </div>

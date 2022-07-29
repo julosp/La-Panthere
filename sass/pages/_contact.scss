@@ -49,6 +49,21 @@
   margin: 5% 4%;
   .mapouter {
     margin-bottom: 2%;
+    position: relative;
+    text-align: right;
+    height: 400px;
+    width: 400px;
+    iframe {
+      border: none;
+      overflow: hidden;
+      margin: 0;
+    }
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      height: 400px;
+      width: 100%;
+    }
   }
   p {
     font-size: 18px;

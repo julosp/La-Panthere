@@ -382,6 +382,40 @@ body {
     padding-bottom: 10%;
   }
 }
+/*ET ICON*/
+@font-face {
+  font-family: et-line;
+  src: url(../fonts/et-line.eot);
+  src: url(../fonts/et-line.eot?#iefix) format("embedded-opentype"), url(../fonts/et-line.woff) format("woff"), url(../fonts/et-line.ttf) format("truetype"), url(../fonts/et-line.svg#et-line) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+.et-icon-browser,
+.et-icon-edit,
+.et-icon-presentation {
+  font-family: et-line;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+}
+
+.et-icon-browser:before {
+  content: "\e00c";
+}
+
+.et-icon-presentation:before {
+  content: "\e00e";
+}
+
+.et-icon-edit:before {
+  content: "\e01c";
+}
+
 .prise-contacte {
   background-color: #f3976c;
   color: black;
@@ -443,6 +477,21 @@ body {
 }
 .location .mapouter {
   margin-bottom: 2%;
+  position: relative;
+  text-align: right;
+  height: 400px;
+  width: 400px;
+}
+.location .mapouter iframe {
+  border: none;
+  overflow: hidden;
+  margin: 0;
+}
+.location .mapouter .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 400px;
+  width: 100%;
 }
 .location p {
   font-size: 18px;

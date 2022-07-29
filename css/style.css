@@ -267,7 +267,10 @@ body {
   margin-bottom: 5%;
   text-align: center;
 }
-.contact button {
+.contact a {
+  margin-bottom: 5%;
+}
+.contact a button {
   padding: 1% 2% 1% 2%;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -278,7 +281,8 @@ body {
   border: none;
   font-size: 18px;
   text-transform: uppercase;
-  margin-bottom: 15%;
+  padding: 10% 15%;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 992px) {
@@ -465,7 +469,8 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   margin: 10% auto;
-  font-size: 22px;
+  font-size: 20px;
+  padding: 2% 5%;
   cursor: pointer;
 }
 

@@ -37,7 +37,8 @@
   &__submit {
     @include button;
     margin: 10% auto;
-    font-size: 22px;
+    font-size: 20px;
+    padding: 2% 5%;
     cursor: pointer;
   }
 }

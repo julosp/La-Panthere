@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
-    <link rel="preload" src="./img/agence-la-panthere.webp" />
+    <link rel="preload" href="./img/agence-la-panthere.webp" as="image" title="background img"/>
 
     <script src="./js/jquery-2.1.0.js" defer></script>
     <script src="./js/bootstrap.js" defer></script>
@@ -66,8 +66,8 @@
               <a href="contact.html">Contacte</a>
           </li>
       </ul>
+      </div>
     </header>
-
       <!--PRISE CONTACTE-->
       <section class="prise-contacte">
             <h1>Parlons web design !</h1>
@@ -86,19 +86,19 @@
 
         <form>
           <label for="mail">Adresse email:</label>
-          <input type="mail" class="formulaire__input" name="adresse_mail" placeholder="Votre adresse email.." required>
+          <input type="email" class="formulaire__input" name="adresse_mail" placeholder="Votre adresse email.." required>
         </form>
 
         <form>
-          <label for="howdidyoukowus">Comment nous avez-vous connu ?</label>
-          <select name="" class="">
+          <label for="user-text">Comment nous avez-vous connu ?</label>
+          <select name="user-text">
             <option value="">--Selectionnez une option--</option>
             <option value="recherche">Recherche internet</option>
             <option value="bouche-a-oreille">Bouche à oreille</option>
             <option value="partenaire">Site partenaire</option>
             <option value="reseaux">Réseaux sociaux</option>
             <option value="autre">Autre</option>
-        </select>
+          </select>
         </form>
 
         <label for="subject">Brief de votre projet (Ajoutez autant de détails que nécessaire):</label>
@@ -125,10 +125,7 @@
           <span itemprop="addressLocality">Lyon</span></p>
 
       </div>
-
-
       </section>
-
 
       <footer>
         <h3><span itemprop="name">Agence La Panthère</span> - Agence web basée à Lyon</h3>
@@ -176,6 +173,5 @@
         </div>
       </footer>
     </div>
-    <!-- Principal conteneur END -->
   </body>
 </html>

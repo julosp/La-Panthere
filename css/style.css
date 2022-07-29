@@ -103,7 +103,7 @@ body {
   }
 }
 .agence__container {
-  background-image: url(./img/agence-la-panthere.webp);
+  background-image: url(../img/agence-la-panthere.jpg);
   background-position: top;
   display: flex;
   flex-direction: column;
@@ -190,7 +190,7 @@ body {
 .objectif {
   display: flex;
   justify-content: center;
-  background-image: url(./img/image-de-presentation_1.webp);
+  background-image: url(../img/image-de-presentation_1.webp);
   background-position: center;
   background-size: cover;
 }
@@ -210,7 +210,6 @@ body {
 }
 
 .portfolio {
-  background-image: url(./img/lines-h2-bg.png);
   padding-bottom: 5%;
 }
 .portfolio__title {
@@ -254,7 +253,7 @@ body {
 }
 
 .contact {
-  background-image: url(./img/agence-la-panthere.webp);
+  background-image: url(../img/agence-la-panthere.webp);
   background-position: center;
   background-size: 120%;
   display: flex;

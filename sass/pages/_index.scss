@@ -1,7 +1,10 @@
 .agence {
   &__container {
     background-image: url(../img/agence-la-panthere.jpg);
-    background-position: top;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,6 +95,8 @@
   justify-content: center;
   background-image: url(../img/image-de-presentation_1.webp);
   background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
   &__bloc {
     text-align: center;

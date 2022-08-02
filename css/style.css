@@ -37,46 +37,14 @@ footer .social {
   list-style: none;
 }
 footer .social li {
-  margin: 2% 5%;
+  padding: 2% 5%;
   font-size: 30px;
   color: black;
 }
-footer .annuaires__container {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-footer .annuaires__liste {
-  position: relative;
-  margin: 2% 3%;
-}
-footer .annuaires__title {
-  position: absolute;
-  top: -20px;
-  left: -5px;
-  list-style: none;
-  color: black;
-}
 
-@media screen and (max-width: 992px) {
-  .annuaires__container {
-    font-size: 16px;
-  }
-  .annuaires__liste {
-    width: 50%;
-    margin: 0;
-  }
-}
 @media screen and (max-width: 768px) {
   .social {
     padding: 0;
-  }
-  .annuaires__container {
-    flex-wrap: wrap;
-  }
-  .annuaires__liste {
-    width: 100%;
-    margin: 0;
   }
 }
 /*RESET LINK STYLE*/
@@ -477,6 +445,12 @@ body {
   font-size: 20px;
   padding: 2% 5%;
   cursor: pointer;
+}
+.formulaire label {
+  font-size: 20px;
+}
+.formulaire form {
+  margin-bottom: 5%;
 }
 
 .location {

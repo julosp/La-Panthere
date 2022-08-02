@@ -35,6 +35,7 @@ footer .social {
   display: flex;
   justify-content: center;
   list-style: none;
+  margin-bottom: 0;
 }
 footer .social li {
   padding: 2% 5%;

@@ -72,7 +72,7 @@ body {
   }
 }
 .agence__container {
-  background-image: url(../img/agence-la-panthere.jpg);
+  background-image: url(../img/agence-la-panthere.webp);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;

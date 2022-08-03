@@ -9,14 +9,228 @@
     <meta name="description" content="Agence Lyonnaise de Web Design" />
     <meta name="keywords" content="création site web lyon" />
 
-    <link rel="stylesheet" type="text/css" href="./css/normalize.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
+    <style>
+      html {
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+      }
+      h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+      }
+      a {
+        background-color: transparent;
+      }
+      img {
+        border-style: none;
+      }
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+    </style>
+    <style>
+      .header__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        margin: 0.5% 10.5%;
+      }
+      .header__logo {
+        height: 40px;
+        width: auto;
+      }
+      .header__nav {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0;
+      }
+      .header__nav li {
+        margin-left: 30px;
+        font-size: 16px;
+      }
+      a:visited {
+        color: inherit;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      body {
+        font-family: HelveticaNeue-Light, "Helvetica Neue Light",
+          "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+      }
+      @media screen and (min-width: 1024px) {
+        .page-container {
+          max-width: none;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .agence__container {
+        background-image: url(../img/agence-la-panthere.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto 0;
+      }
+      .agence__container img {
+        width: 100px;
+        margin-top: 8%;
+      }
+      .agence__container h1 {
+        color: #fff;
+        margin-bottom: 8%;
+      }
+      .services__container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .services__description {
+        margin-top: 3%;
+        margin-bottom: 2%;
+        width: 50%;
+      }
+      .services__description h2 {
+        font-size: 22px;
+        text-align: center;
+      }
+      .services__box {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+      }
+      .services__card {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        justify-content: space-around;
+        text-align: center;
+        margin: 0 1% 0 1%;
+      }
+      .services__card h3 {
+        text-transform: uppercase;
+      }
+      .services__card p {
+        font-size: 15px;
+      }
+      .services__citation {
+        text-align: center;
+        width: 50%;
+        font-size: 20px;
+      }
+      .services__citation__comment {
+        font-style: italic;
+        margin-bottom: 0;
+      }
+      .icon__web::before {
+        font-family: et-line;
+        font-weight: 400;
+        font-size: 60px;
+        content: "\e00c";
+      }
+      .icon__strat::before {
+        font-family: et-line;
+        font-weight: 400;
+        font-size: 60px;
+        content: "\e00e";
+      }
+      .icon__illustration::before {
+        font-family: et-line;
+        font-weight: 400;
+        font-size: 60px;
+        content: "\e01c";
+      }
+      @media screen and (max-width: 992px) {
+        .header__container {
+          height: 100px;
+          justify-content: center;
+        }
+        .header__container__logo img {
+          height: 60px;
+        }
+        .header__nav {
+          display: none;
+        }
+        .services__description {
+          width: 60%;
+        }
+        .services__card {
+          width: 25%;
+          align-items: center;
+        }
+        .services__card p {
+          width: 60%;
+        }
+        .services__citation {
+          width: 70%;
+        }
+      }
+      @media screen and (max-width: 992px) and (max-width: 768px) {
+        .header__container {
+          height: 100px;
+          justify-content: center;
+        }
+        .header__container__logo img {
+          height: 50px;
+        }
+        .header__nav {
+          display: none;
+        }
+        .agence__container h1 {
+          text-align: center;
+        }
+        .services__description {
+          width: 95%;
+        }
+        .services__citation {
+          width: 95%;
+        }
+        .services__box {
+          display: flex;
+          flex-direction: column;
+        }
+        .services__card {
+          margin: 2% auto;
+          width: 90%;
+        }
+        .services__card p {
+          width: 100%;
+        }
+        .services__citation__comment {
+          margin-bottom: 5%;
+        }
+      }
+      @font-face {
+        font-family: et-line;
+        src: url(../fonts/et-line.eot);
+        src: url(../fonts/et-line.eot?#iefix) format("embedded-opentype"),
+          url(../fonts/et-line.woff) format("woff"),
+          url(../fonts/et-line.ttf) format("truetype"),
+          url(../fonts/et-line.svg#et-line) format("svg");
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
 
     <script
       src="https://code.jquery.com/jquery-2.2.4.min.js"
       integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
       crossorigin="anonymous"
+      defer
     ></script>
 
     <script
@@ -24,13 +238,14 @@
       integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+      defer
     ></script>
 
-    <script src="./js/blocs.js" defer></script>
-    <script src="./js/gmaps.min.js" defer></script>
+    <script src="./js/blocs.min.js" defer></script>
     <script
       src="https://kit.fontawesome.com/2bca06624f.js"
       crossorigin="anonymous"
+      defer
     ></script>
 
     <title>La Panthère | Web design à Lyon</title>
@@ -51,7 +266,7 @@
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
-      async
+      defer
       src="https://www.googletagmanager.com/gtag/js?id=G-XY9HCEP189"
     ></script>
     <script>
@@ -77,8 +292,8 @@
         <div class="header__container">
           <!--LOGO-->
           <div class="header__container__logo">
-            ><img
-              src="./img/agence-la-panthere-monochrome.svg"
+            <img
+              src="./img/agence-la-panthere-monochrome.webp"
               alt="Logo La Panthère"
               class="header__logo"
               itemprop="image"
@@ -295,5 +510,19 @@
       </footer>
     </div>
     <!-- Principal conteneur END -->
+
+    <link rel="stylesheet" type="text/css" href="./css/normalize.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/style.min.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/et-line.min.css"
+      media="all"
+    />
   </body>
 </html>

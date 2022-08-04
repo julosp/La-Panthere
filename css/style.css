@@ -241,10 +241,10 @@ body {
   margin-bottom: 5%;
   text-align: center;
 }
-.contact a {
-  margin-bottom: 5%;
+.contact form {
+  margin-bottom: 25%;
 }
-.contact a button {
+.contact form button {
   padding: 1% 2% 1% 2%;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -257,6 +257,7 @@ body {
   text-transform: uppercase;
   padding: 10% 15%;
   font-size: 20px;
+  margin-bottom: 20%;
 }
 
 @media screen and (max-width: 992px) {

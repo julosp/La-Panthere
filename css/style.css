@@ -20,7 +20,56 @@
   margin-left: 30px;
   font-size: 16px;
 }
+.header__dropdown {
+  display: none;
+}
+.header__dropdown__content {
+  display: none;
+}
 
+@media screen and (max-width: 992px) {
+  .header__nav {
+    display: none;
+  }
+  .header__dropdown {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 1%;
+  }
+  .header__dropdown__btn {
+    background-color: white;
+    padding: 15px;
+    font-size: 30px;
+    border: none;
+  }
+  .header__dropdown__content {
+    display: none;
+    background-color: white;
+    padding: 3%;
+    padding-bottom: 5%;
+    border-top: 2px solid #f3976c;
+    box-shadow: inset 0px 0px 50px -13px rgba(0, 0, 0, 0.26);
+    transition: all 1s ease;
+    height: 0;
+  }
+  .header__dropdown__content a {
+    margin: 1%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header__container {
+    margin: 0 1%;
+  }
+  .header__container__logo img {
+    width: 90%;
+  }
+  .header__dropdown__content {
+    padding: 5%;
+    padding-bottom: 10%;
+  }
+}
 footer {
   background-color: #f3976c;
   max-width: none !important;
@@ -263,13 +312,9 @@ body {
 @media screen and (max-width: 992px) {
   .header__container {
     height: 100px;
-    justify-content: center;
   }
   .header__container__logo img {
     height: 60px;
-  }
-  .header__nav {
-    display: none;
   }
   .services__description {
     width: 60%;
@@ -301,13 +346,9 @@ body {
 @media screen and (max-width: 992px) and (max-width: 768px) {
   .header__container {
     height: 100px;
-    justify-content: center;
   }
   .header__container__logo img {
     height: 50px;
-  }
-  .header__nav {
-    display: none;
   }
   .agence__container h1 {
     text-align: center;
@@ -484,6 +525,12 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+  .prise-contacte h2 {
+    margin: 2%;
+  }
+  .prise-contacte p {
+    margin: 1%;
+  }
   .middle-container {
     flex-direction: column;
     justify-content: center;
@@ -523,6 +570,9 @@ body {
     width: 80%;
   }
   .middle-container .location .mapouter {
+    width: 100%;
+  }
+  .middle-container .location .mapouter iframe {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

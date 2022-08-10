@@ -162,9 +162,6 @@
         .header__container__logo img {
           height: 60px;
         }
-        .header__nav {
-          display: none;
-        }
         .services__description {
           width: 60%;
         }
@@ -186,9 +183,6 @@
         }
         .header__container__logo img {
           height: 50px;
-        }
-        .header__nav {
-          display: none;
         }
         .agence__container h1 {
           text-align: center;
@@ -230,6 +224,7 @@
       crossorigin="anonymous"
       async
     ></script>
+    <script></script>
 
     <title>La Panthère | Web design à Lyon</title>
 
@@ -261,6 +256,11 @@
 
       gtag("config", "G-XY9HCEP189");
     </script>
+    <script>
+      function showDiv() {
+        document.getElementById("showMenu").style.display = "flex";
+      }
+    </script>
   </head>
 
   <body>
@@ -289,11 +289,21 @@
               <a href="index.html" aria-label="Index La Panthère">Accueil</a>
             </li>
             <li>
-              <a href="contact.html" aria-label="Contacte La Panthère"
-                >Contacte</a
+              <a href="contact.html" aria-label="Contact La Panthère"
+                >Contact</a
               >
             </li>
           </ul>
+        </div>
+        <div class="header__dropdown">
+          <button class="header__dropdown__btn" onclick="showDiv()">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="header__dropdown__content" id="showMenu">
+          <a href="/index.html" aria-label="Index La Panthère">Accueil</a>
+          <a href="/contact.html" aria-label="Contact La Panthère">Contact</a>
         </div>
       </header>
 

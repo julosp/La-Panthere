@@ -164,18 +164,13 @@
   .header {
     &__container {
       height: 100px;
-      justify-content: center;
       &__logo {
         img {
           height: 60px;
         }
       }
     }
-    &__nav {
-      display: none;
-    }
   }
-
   .services {
     &__description {
       width: 60%;
@@ -215,18 +210,13 @@
     .header {
       &__container {
         height: 100px;
-        justify-content: center;
         &__logo {
           img {
             height: 50px;
           }
         }
       }
-      &__nav {
-        display: none;
-      }
     }
-
     .agence {
       &__container {
         h1 {

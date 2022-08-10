@@ -78,6 +78,14 @@
 }
 
 @media screen and (max-width: 992px) {
+  .prise-contacte{
+    h2{
+      margin: 2%;
+    }
+    p{
+      margin: 1%;
+    }
+  }
   .middle-container {
     flex-direction: column;
     justify-content: center;
@@ -119,6 +127,9 @@
       }
       .mapouter {
         width: 100%;
+        iframe{
+          width: 100%;
+        }
       }
     }
   }

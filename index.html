@@ -1,524 +1,379 @@
 <!DOCTYPE html>
-<html lang="Fr">
+<html lang="Default">
   <head>
     <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="seo, google, site web, site internet, agence design paris, agence design, agence design,agence design,agence design,agence design,agence design,agence design,agence design,agence design"
+    />
+    <meta name="description" content="" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
-    <meta name="description" content="Agence Lyonnaise de Web Design" />
-    <meta name="keywords" content="création site web lyon" />
+    <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
+	<link rel="preload" src="/img/agence-la-panthere-monochrome.webp">
+    <script src="./js/jquery-2.1.0.min.js" defer></script>
+    <script src="./js/bootstrap.min.js" defer></script>
+    <script src="./js/blocs.min.js" defer></script>
+    <script src="./js/jquery.touchSwipe.min.js" defer></script>
+    <script src="./js/gmaps.min.js" defer></script>
 
-    <style>
-      html {
-        line-height: 1.15;
-        -webkit-text-size-adjust: 100%;
-      }
-      body {
-        margin: 0;
-      }
-      h1 {
-        font-size: 2em;
-        margin: 0.67em 0;
-      }
-      a {
-        background-color: transparent;
-      }
-      img {
-        border-style: none;
-      }
-      ::-webkit-file-upload-button {
-        -webkit-appearance: button;
-        font: inherit;
-      }
-    </style>
-    <style>
-      .header__container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 10vh;
-        margin: 0.5% 10.5%;
-      }
-      .header__logo {
-        height: 40px;
-        width: auto;
-      }
-      .header__nav {
-        list-style: none;
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 0;
-      }
-      .header__nav li {
-        margin-left: 30px;
-        font-size: 16px;
-      }
-      a:visited {
-        color: inherit;
-      }
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-      body {
-        font-family: HelveticaNeue-Light, "Helvetica Neue Light",
-          "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        font-weight: 300;
-      }
-      @media screen and (min-width: 1024px) {
-        .page-container {
-          max-width: none;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-      .agence__container {
-        background-image: url(../img/agence-la-panthere.webp);
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto 0;
-      }
-      .agence__container img {
-        width: 100px;
-        margin-top: 8%;
-      }
-      .agence__container h1 {
-        color: #fff;
-        margin-bottom: 8%;
-      }
-      .services__container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-      }
-      .services__description {
-        margin-top: 3%;
-        margin-bottom: 2%;
-        width: 50%;
-      }
-      .services__description h2 {
-        font-size: 22px;
-        text-align: center;
-      }
-      .services__box {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 5%;
-      }
-      .services__card {
-        display: flex;
-        flex-direction: column;
-        width: 20%;
-        justify-content: space-around;
-        text-align: center;
-        margin: 0 1% 0 1%;
-      }
-      .services__card h3 {
-        text-transform: uppercase;
-      }
-      .services__card p {
-        font-size: 15px;
-      }
-      .services__citation {
-        text-align: center;
-        width: 50%;
-        font-size: 20px;
-      }
-      .services__citation__comment {
-        font-style: italic;
-        margin-bottom: 0;
-      }
-      .icon__web::before {
-        font-family: et-line;
-        font-weight: 400;
-        font-size: 60px;
-        content: "\e00c";
-      }
-      .icon__strat::before {
-        font-family: et-line;
-        font-weight: 400;
-        font-size: 60px;
-        content: "\e00e";
-      }
-      .icon__illustration::before {
-        font-family: et-line;
-        font-weight: 400;
-        font-size: 60px;
-        content: "\e01c";
-      }
-      @media screen and (max-width: 992px) {
-        .header__container {
-          height: 100px;
-          justify-content: center;
-        }
-        .header__container__logo img {
-          height: 60px;
-        }
-        .services__description {
-          width: 60%;
-        }
-        .services__card {
-          width: 25%;
-          align-items: center;
-        }
-        .services__card p {
-          width: 60%;
-        }
-        .services__citation {
-          width: 70%;
-        }
-      }
-      @media screen and (max-width: 992px) and (max-width: 768px) {
-        .header__container {
-          height: 100px;
-          justify-content: center;
-        }
-        .header__container__logo img {
-          height: 50px;
-        }
-        .agence__container h1 {
-          text-align: center;
-        }
-        .services__description {
-          width: 95%;
-        }
-        .services__citation {
-          width: 95%;
-        }
-        .services__box {
-          display: flex;
-          flex-direction: column;
-        }
-        .services__card {
-          margin: 2% auto;
-          width: 90%;
-        }
-        .services__card p {
-          width: 100%;
-        }
-        .services__citation__comment {
-          margin-bottom: 5%;
-        }
-      }
-      @font-face {
-        font-family: et-line;
-        src: url(../fonts/et-line.eot);
-        src: url(../fonts/et-line.eot?#iefix) format("embedded-opentype"),
-          url(../fonts/et-line.woff) format("woff"),
-          url(../fonts/et-line.ttf) format("truetype"),
-          url(../fonts/et-line.svg#et-line) format("svg");
-        font-weight: 400;
-        font-style: normal;
-      }
-    </style>
-    <script
-      src="https://kit.fontawesome.com/2bca06624f.js"
-      crossorigin="anonymous"
-      async
-    ></script>
-    <script></script>
-
-    <title>La Panthère | Web design à Lyon</title>
+    <title>La Panthère | Agence de Web Design</title>
 
     <!-- Analytics -->
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-PVZXHKL");
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      defer
-      src="https://www.googletagmanager.com/gtag/js?id=G-XY9HCEP189"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-XY9HCEP189");
-    </script>
-    <script>
-      function showDiv() {
-        var showMenu = document.getElementById("showMenu");
-
-        if (showMenu.style.display == "none") {
-          return open();
-        }
-        return close();
-      }
-
-      function open() {
-        document.getElementById("showMenu").style.display = "flex";
-      }
-      function close() {
-        document.getElementById("showMenu").style.display = "none";
-      }
-    </script>
+    <!-- Analytics END -->
   </head>
-
   <body>
     <!-- Principal conteneur -->
-    <div
-      class="page-container"
-      itemscope
-      itemtype="http://schema.org/LocalBusiness"
-    >
-      <!-- HEADER -->
-      <header>
-        <div class="header__container">
-          <!--LOGO-->
-          <div class="header__container__logo">
-            <img
-              src="./img/agence-la-panthere-monochrome.webp"
-              alt="Logo La Panthère"
-              class="header__logo"
-              itemprop="image"
-            />
-          </div>
-
-          <!--NAV BAR-->
-          <ul class="header__nav">
-            <li>
-              <a href="./index.html" aria-label="Index La Panthère">Accueil</a>
-            </li>
-            <li>
-              <a href="./contact.html" aria-label="Contact La Panthère"
-                >Contact</a
+    <div class="page-container">
+      <!-- bloc-0 -->
+      <div class="bloc bgc-white l-bloc" id="bloc-0">
+        <div class="container bloc-sm">
+          <nav class="navbar row">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="index.html"
+                ><img
+                  src="img/agence-la-panthere-monochrome.svg"
+                  alt="paris web design logo agence web meilleure agence"
+                  height="40"
+              /></a>
+              <button
+                id="nav-toggle"
+                type="button"
+                class="ui-navbar-toggle navbar-toggle"
+                data-toggle="collapse"
+                data-target=".navbar-1"
               >
-            </li>
-          </ul>
+                <span class="sr-only">Toggle navigation</span
+                ><span class="icon-bar"></span><span class="icon-bar"></span
+                ><span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+              <ul class="site-navigation nav navbar-nav">
+                <li>
+                  <a href="index.html">Accueil</a>
+                </li>
+                <li></li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <div class="header__dropdown">
-          <button class="header__dropdown__btn" onclick="showDiv()">
-            <span class="fas fa-bars"></span>
-          </button>
-        </div>
-
-        <div class="header__dropdown__content" id="showMenu">
-          <a href="./index.html" aria-label="Index La Panthère">Accueil</a>
-          <a href="./contact.html" aria-label="Contact La Panthère">Contact</a>
-        </div>
-      </header>
-
-      <!-- AGENCE LOGO -->
-      <div class="agence__container">
-        <img
-          src="./img/logo.png"
-          class="__logo"
-          alt="Logo La Panthère"
-          itemprop="image"
-        />
-        <h1>Agence La Panthère</h1>
       </div>
+      <!-- bloc-0 END -->
 
-      <!--SERVICES-->
-      <section class="services__container">
-        <div class="services__description">
-          <h2>
-            L'agence <span itemprop="name">La Panthère</span> est une agence de
-            web design aide les entreprises à devenir attractives et visibles
-            sur Internet.
-          </h2>
-        </div>
-
-        <div class="services__box">
-          <div class="services__card">
-            <span class="icon__web"></span>
-            <h3>Web Design</h3>
-            <p>
-              Que vous ayez un site web qui a besoin d’un rafraîchissement ou
-              que vous partiez de zéro, laissez-nous vous réaliser un design
-              dont vous serez fier
-            </p>
-          </div>
-
-          <div class="services__card">
-            <span class="icon__strat"></span>
-            <h3>Stratégie</h3>
-            <p>
-              Plutôt que de suggérer des designs à la mode, nous travaillerons
-              avec vous pour comprendre vos objectifs commerciaux afin de vous
-              proposer le meilleur design possible.
-            </p>
-          </div>
-
-          <div class="services__card">
-            <span class="icon__illustration"></span>
-            <h3>Illustrations</h3>
-            <p>
-              Un bon design n'est rien sans de bonnes illustrations. Laissez
-              faire notre équipe de graphistes talentueux pour donner à vos
-              pages une touche finale d'élégance.
-            </p>
+      <!-- bloc-1-presentation -->
+      <div
+        class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax"
+        id="bloc-1-hero"
+      >
+        <div class="container bloc-lg">
+          <div class="row tight-width-whitespace">
+            <div class="col-sm-12">
+              <img
+                src="img/logo.png"
+                class="center-block image-resize-mode"
+                width="100"
+                alt="Agence La Panthère, agence web paris, création logo paris"
+              />
+              <h1 class="text-center hero-bloc-text tc-white">
+                Agence La Panthère
+              </h1>
+              <div class="text-center">
+                <a
+                  href="contact.html"
+                  class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine"
+                  id="cta-hero"
+                  >Contact</a
+                >
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+      <!-- bloc-1-presentation END -->
 
-        <div
-          class="services__citation"
-          itemprop="review"
-          itemscope
-          itemtype="http://schema.org/Review"
-        >
-          <p class="services__citation__comment">
-            "<span itemprop="reviewBody"
-              >L'agence La Panthère est une excellente agence web ! Les web
-              designers ont réussi à capturer l'essence de notre entreprise et à
-              l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en
-              ligne à Lyon."</span
-            >
-          </p>
-          <p class="services__citation__name" itemprop="name">
-            <span
-              itemprop="author"
-              itemscope
-              itemtype="http://schema.org/Person"
-              >Maxime Guibard, PDG de À vos fourchettes</span
-            >
-          </p>
+      <!-- bloc-2-services -->
+      <div class="bloc bgc-white l-bloc" id="bloc-2-services">
+        <div class="container bloc-md">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <p class="h1">
+                L'agence La Panthère est une agence de web design qui aide les
+                entreprises à devenir attractives et visibles sur Internet.
+              </p>
+            </div>
+          </div>
+          <div class="row voffset-lg med-width-whitespace">
+            <div class="col-sm-4">
+              <div class="text-center">
+                <span
+                  class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"
+                ></span>
+              </div>
+              <h3 class="mg-md text-center">Web design</h3>
+              <p class="text-center">
+                Que vous ayez un site web qui a besoin d&rsquo;un
+                rafraîchissement ou que vous partiez de zéro, laissez-nous vous
+                réaliser un design dont vous serez fier.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center">
+                <span
+                  class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"
+                ></span>
+              </div>
+              <h3 class="mg-md text-center">&nbsp;Stratégie</h3>
+              <p class="text-center">
+                Plutôt que de suggérer des designs à la mode, nous travaillerons
+                avec vous pour comprendre vos objectifs commerciaux afin de vous
+                proposer le meilleur design possible.<br />
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <div class="text-center">
+                <span
+                  class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"
+                ></span>
+              </div>
+              <h3 class="mg-md text-center">Illustrations</h3>
+              <p class="text-center">
+                Un bon design n'est rien sans de bonnes illustrations. Laissez
+                faire notre équipe de graphistes talentueux pour donner à vos
+                pages une touche finale d'élégance.
+              </p>
+            </div>
+          </div>
+          <div class="row voffset-lg voffset">
+            <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+              <p class="italic">
+                "L'agence La Panthère est une excellente agence web ! Les web
+                designers ont réussi à capturer l'essence de notre entreprise et
+                à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes
+                en ligne à Lyon"
+              </p>
+              <p>Maxime Guibard, PDG de A vos fourchettes</p>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+      <!-- bloc-2-services END -->
 
-      <section class="objectif">
-        <div class="objectif__bloc">
-          <h3>
-            Nous souhaitons aider les entreprises de la région Lyonnaise à se
-            développer et à connaître le succès. Nous travaillons pour aider les
-            entreprises locales à attirer de nouveaux clients .<br />
-          </h3>
-          <p>
-            Nous aimons collaborer avec des entrepreneurs créatifs et des
-            entreprises locale, qu’elles aient besoin de créer un site de A à Z
-            ou de donner un coup de jeune à leur site. Que vous ayez besoin
-            d’une identité visuelle complète ou d’une refonte de votre site,
-            n’hésitez pas à nous contacter. Nous travaillerons ensemble pour
-            créer des sites beau et bien structurés, qui seront facilement
-            trouvable sur les moteurs de recherche.
-          </p>
+      <!-- bloc-3-what-i-do -->
+      <div
+        class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax"
+        id="bloc-3-what-i-do"
+      >
+        <div class="container bloc-lg">
+          <div class="row tight-width-whitespace black-background">
+            <div class="col-sm-12">
+              <h2 class="mg-md text-center tc-white">
+                Nous souhaitons aider les entreprises de la région Lyonnaise à
+                se développer et à connaître le succès. Nous travaillons pour
+                aider les entreprises locales à attirer de nouveaux clients .<br />
+              </h2>
+              <p class="text-center white">
+                Nous aimons collaborer avec des entrepreneurs créatifs et des
+                entreprises locale, qu’elles aient besoin de créer un site de A
+                à Z ou de donner un coup de jeune à leur site. Que vous ayez
+                besoin d’une identité visuelle complète ou d’une refonte de
+                votre site, n’hésitez pas à nous contacter. Nous travaillerons
+                ensemble pour créer des sites beau et bien structurés, qui
+                seront facilement trouvable sur les moteurs de recherche.
+                <br /><br /><a class="ltc-white bold-link" href="page2.html"
+                  >Contactez notre équipe</a
+                ><br />
+              </p>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+      <!-- bloc-3-what-i-do END -->
 
-      <!--PORTFOLIO-->
-      <section class="portfolio">
-        <div class="portfolio__title">
-          <h3>
-            Nous travaillons avec beaucoup de clients, voici nos réalisations.
-          </h3>
-        </div>
-
-        <div class="portfolio__container">
-          <div class="portfolio__container__card">
-            <a href="#" aria-label="Site web pour un journal local">
-              <img src="./img/1.webp" alt="Site web pour un journal local" />
-              <h3>Refonte d'un site web pour un journal local</h3>
+      <!-- bloc-4-portfolio -->
+      <div
+        class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc"
+        id="bloc-4-portfolio"
+      >
+        <div class="container bloc-lg">
+          <div class="row">
+            <div class="col-sm-12 text-center">
               <p>
+                Nous travaillonsavec beaucoup de clients, voici nos réalisations
+              </p>
+            </div>
+          </div>
+          <div class="row tight-width-whitespace portfolio-row">
+            <div class="col-sm-6">
+              <a
+                href="#"
+                data-lightbox="img/1.webp"
+                data-gallery-id="gallery-1"
+                data-caption="Refonte d'un site web pour un journal local"
+                data-frame="snapshot-lb"
+                ><img
+                  src="img/1.webp"
+                  alt="paris web design logo agence web meilleure agence et refonte site web journal"
+                  class="img-responsive portfolio-thumb"
+              /></a>
+              <h3 class="mg-md text-center">
+                Refonte d'un site web pour un journal local
+              </h3>
+              <p class="text-center">
                 Nous avons créé une nouvelle identité visuelle pour un journal
                 lyonnais.
               </p>
-            </a>
-          </div>
-
-          <div class="portfolio__container__card">
-            <a href="#" aria-label="Site web pour un photographe">
-              <img src="./img/2.webp" alt="Site web pour un photographe" />
-              <h3>Création d'un site web pour un photographes</h3>
-              <p>
+            </div>
+            <div class="col-sm-6">
+              <a
+                href="#"
+                data-lightbox="img/2.webp"
+                data-gallery-id="gallery-1"
+                data-caption="Création d'un site web pour photographes"
+                data-frame="snapshot-lb"
+                ><img
+                  src="img/2.webp"
+                  class="img-responsive portfolio-thumb"
+                  alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes"
+              /></a>
+              <h3 class="mg-md text-center">
+                Création d'un site web pour photographes
+              </h3>
+              <p class="text-center">
                 Nous avons conçu la plateforme idéale pour laisser place aux
                 clichés des photographes.
               </p>
-            </a>
+            </div>
           </div>
-
-          <div class="portfolio__container__card">
-            <a href="#" aria-label="Site web pour un voyageur">
-              <img src="./img/3.webp" alt="Site web pour un voyageur" />
-              <h3>Création d'un site internet pour un voyageur</h3>
-              <p>
-                Nous avons élaboré un internet et des illustrations pour
+          <div class="row tight-width-whitespace portfolio-row">
+            <div class="col-sm-6">
+              <a
+                href="#"
+                data-lightbox="img/3.webp"
+                data-gallery-id="gallery-1"
+                data-caption="Création d'un site internet pour un voyageur"
+                data-frame="snapshot-lb"
+                ><img
+                  src="img/3.webp"
+                  class="img-responsive portfolio-thumb"
+                  alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"
+              /></a>
+              <h3 class="mg-md text-center">
+                Création d'un site internet pour un voyageur
+              </h3>
+              <p class="text-center">
+                Nous avons élaboré un site internet et des illustrations pour
                 sublimer les vidéos et les articles de ce voyageur.
               </p>
-            </a>
-          </div>
-
-          <div class="portfolio__container__card">
-            <a href="#" aria-label="Site web pour une agence de mariage">
-              <img
-                src="./img/4.webp"
-                alt="Site web pour une agence de mariage"
-              />
-              <h3>Conception d'un site pour une agence de mariage</h3>
-              <p>
+            </div>
+            <div class="col-sm-6">
+              <a
+                href="#"
+                data-lightbox="img/4.webp"
+                data-gallery-id="gallery-1"
+                data-caption="Conception d'un site pour une agence de mariage"
+                data-frame="snapshot-lb"
+                ><img
+                  src="img/4.webp"
+                  class="img-responsive portfolio-thumb"
+                  alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage"
+              /></a>
+              <h3 class="mg-md text-center">
+                Conception d'un site pour une agence de mariage
+              </h3>
+              <p class="text-center">
                 Nous avons travaillé avec cette agence pour créer un site
                 internet permettant la présentation détaillée de leurs
                 prestations.
               </p>
-            </a>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+      <!-- bloc-4-portfolio END -->
 
-      <!-- Contact -->
-
-      <section class="contact">
-        <h2>
-          Prêt pour redonner vie à votre projet ? <br />
-          Contactez notre équipe !
-        </h2>
-        <div class="btn">
-          <form action="contact.html" method="get">
-            <button>Contact</button>
-          </form>
+      <!-- bloc-5-cta -->
+      <div
+        class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper"
+        id="bloc-5-cta"
+      >
+        <div class="container bloc-lg">
+          <div class="row">
+            <h2 class="mg-md text-center tc-white">
+              Prêt pour redonner vie à votre projet ?<br />Contactez notre
+              équipe !
+            </h2>
+            <div class="col-sm-12 text-center">
+              <a
+                href="page2.html"
+                class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero"
+                >Contact</a
+              >
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+      <!-- bloc-5-cta END -->
 
-      <!--Footer-->
-      <footer>
-        <h3>Agence La Panthère - Agence web basée à Lyon</h3>
-        <ul class="social">
-          <li>
-            <a href="#" aria-label="Twitter"
-              ><span class="fa-brands fa-twitter"></span
-            ></a>
-          </li>
-          <li>
-            <a href="#" aria-label="Facebook"
-              ><span class="fa-brands fa-facebook-f"></span
-            ></a>
-          </li>
-          <li>
-            <a href="#" aria-label="Dribble"
-              ><span class="fa-brands fa-dribbble"></span
-            ></a>
-          </li>
-          <li>
-            <a href="#" aria-label="Instagram"
-              ><span class="fa-brands fa-instagram"></span
-            ></a>
-          </li>
-        </ul>
-      </footer>
+      <!-- Footer - bloc-8 -->
+      <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+        <div class="container bloc-sm">
+          <div class="row">
+            <div class="col-sm-12">
+              <p class="text-center white">
+                Agence La Panthère - Agence web basée à Lyon.<br />
+              </p>
+              <div class="row row-no-gutters social">
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="index.html"
+                      ><span class="fa fa-twitter icon-md"></span
+                    ></a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="index.html"
+                      ><span class="fa fa-facebook icon-md"></span
+                    ></a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="index.html"
+                      ><span class="fa fa-dribbble icon-md"></span
+                    ></a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="index.html"
+                      ><span class="fa fa-instagram icon-md"></span
+                    ></a>
+                  </div>
+                </div>
+                <div class="keywords" style="color: #f3976c">
+                  Agence web à paris, stratégie web, web design, illustrations,
+                  design de site web, site web, web, internet, site internet,
+                  site
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer - bloc-8 END -->
     </div>
     <!-- Principal conteneur END -->
-
-    <link rel="stylesheet" type="text/css" href="./css/normalize.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./style.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
   </body>
 </html>

@@ -55,7 +55,19 @@
     </script>
         <script>
           function showDiv() {
-            document.getElementById("showMenu").style.display = "flex";
+            var showMenu = document.getElementById("showMenu") 
+            
+            if (showMenu.style.display == "none"){
+              return open()
+            }
+            return close()
+          }
+
+          function open(){
+            document.getElementById("showMenu").style.display = "flex"; 
+          }
+          function close(){
+            document.getElementById("showMenu").style.display = "none"; 
           }
         </script>
   </head>
